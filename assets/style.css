@@ -276,14 +276,20 @@ form.done .ok{display:block;animation:fadeup .7s var(--ease) both}
 .final h2{font-size:clamp(2.4rem,1.5rem + 4vw,5rem);max-width:14ch;margin-bottom:2.2rem}
 .final .photo{aspect-ratio:4/5;max-height:620px;align-self:end;border-radius:var(--radius) var(--radius) 0 0}
 
-footer.site{background:var(--ink);color:var(--on-forest-soft);padding:2.4rem 0;font-size:.9rem}
-footer.site .wrap{display:grid;grid-template-columns:1fr auto auto;gap:1.5rem 2.5rem;align-items:center}
-footer.site a{text-decoration:none;transition:color .2s}
+footer.site{background:var(--ink);color:var(--on-forest-soft);font-size:.92rem}
+footer.site a{text-decoration:none;transition:color .2s,background .3s var(--ease),border-color .3s}
 footer.site a:hover{color:var(--on-forest)}
-footer.site .fl{display:flex;flex-wrap:wrap;gap:.2rem 1.6rem}
-footer.site .fl a,footer.site .credit a{display:inline-block;padding-block:.5rem}
-footer.site .credit a{color:var(--on-forest);font-weight:600;border-bottom:1px solid var(--on-forest-line);padding-bottom:1px}
-footer.site .credit a:hover{border-color:var(--sage)}
+.f-top{display:flex;align-items:center;justify-content:space-between;gap:1.2rem 2rem;flex-wrap:wrap;padding:2.6rem 0 2.2rem;border-bottom:1px solid var(--on-forest-line)}
+.f-label{font:800 clamp(1.3rem,1.1rem + .6vw,1.7rem)/1 "Bricolage Grotesque";letter-spacing:-.02em;color:var(--on-forest)}
+.social{display:flex;gap:.7rem;flex-wrap:wrap}
+.social a{display:inline-flex;align-items:center;gap:.5em;padding:.8em 1.2em;border:1.5px solid var(--on-forest-line);border-radius:var(--radius);color:var(--on-forest);font-weight:600}
+.social a:hover{background:var(--on-forest);color:var(--ink);border-color:var(--on-forest)}
+.f-bottom{display:flex;align-items:center;justify-content:space-between;gap:.6rem 2rem;flex-wrap:wrap;padding:1.4rem 0 1.8rem}
+.f-bottom .sep{opacity:.4;margin:0 .4em}
+.f-bottom .credit a{color:var(--on-forest);font-weight:600;text-decoration:underline;text-decoration-color:var(--on-forest-line);text-underline-offset:4px}
+.f-bottom .credit a:hover{text-decoration-color:var(--sage)}
+.f-bottom .fl{display:flex;gap:1.6rem}
+.f-bottom .fl a{display:inline-block;padding-block:.4rem}
 
 /* Rechtstexte + 404 */
 .legal{padding-block:clamp(3rem,6vw,6rem)}
@@ -328,7 +334,6 @@ footer.site .credit a:hover{border-color:var(--sage)}
   .coach{grid-template-columns:1fr}
   .coach .when{text-align:left}
   .final .photo{max-height:440px;aspect-ratio:4/3}
-  footer.site .wrap{grid-template-columns:1fr}
 }
 @media (max-width:560px){
   .tools{grid-template-columns:1fr}
@@ -340,5 +345,3 @@ footer.site .credit a:hover{border-color:var(--sage)}
   .pain li{grid-template-columns:1fr;gap:.2rem}
   .hero-img .tag{left:.8rem;right:.8rem;max-width:none}
 }
-footer.site .credit a{border-bottom:0;text-decoration:underline;text-decoration-color:var(--on-forest-line);text-underline-offset:4px;transition:text-decoration-color .3s}
-footer.site .credit a:hover{text-decoration-color:var(--sage)}
