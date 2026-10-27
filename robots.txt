@@ -1,0 +1,33 @@
+# Clean Klar Fit: alle Suchmaschinen und KI-Assistenten dürfen die Seite lesen.
+User-agent: *
+Allow: /
+Disallow: /anmelden.php
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+Sitemap: https://cleanklarfit.de/sitemap.xml

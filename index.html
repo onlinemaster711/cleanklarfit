@@ -1,315 +1,126 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="no-js">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Clean Klar Fit | Fit und gesund ab 40, 50 und 60</title>
-<meta name="description" content="12-Wochen-Online-Kurs mit Personal Trainer Florian Schwab: Ernährung, Training, Mobility und Mindset. Dein Werkzeugkasten zum Abnehmen, Aufbauen und Gesundbleiben.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper: oklch(97% 0.012 95);
-  --paper-2: oklch(93.5% 0.018 95);
-  --paper-3: oklch(90.5% 0.022 95);
-  --ink: oklch(24% 0.03 160);
-  --ink-soft: oklch(40% 0.025 160);
-  --forest: oklch(34% 0.06 160);
-  --forest-dark: oklch(28% 0.055 160);
-  --sage: oklch(76% 0.075 150);
-  --sage-soft: oklch(87% 0.05 148);
-  --line: oklch(85% 0.02 110);
-  --on-forest: oklch(95% 0.02 110);
-  --on-forest-soft: oklch(82% 0.04 150);
-  --on-forest-line: color-mix(in oklch, var(--on-forest) 18%, transparent);
-  --error: oklch(52% 0.16 28);
-  --radius: 6px;
-  --ease: cubic-bezier(.16,1,.3,1);
-  --wrap: min(1200px, 100% - 2*clamp(16px, 4vw, 48px));
+<title>Fit und gesund ab 40, 50 und 60: Online-Kurs | Clean Klar Fit</title>
+<meta name="description" content="12-Wochen-Online-Kurs mit Personal Trainer Florian Schwab: Ernährung, Training, Mobility, Mindset. Persönlich betreut. Jetzt auf die Warteliste.">
+<link rel="canonical" href="https://cleanklarfit.de/">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<meta name="author" content="Florian Schwab">
+<meta name="theme-color" content="#16412d">
+
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Clean Klar Fit">
+<meta property="og:title" content="Fit und gesund ab 40, 50 und 60 | Clean Klar Fit">
+<meta property="og:description" content="12-Wochen-Online-Kurs mit Personal Trainer Florian Schwab. Ernährung, Training, Mobility und Mindset. Persönlich betreut.">
+<meta property="og:url" content="https://cleanklarfit.de/">
+<meta property="og:image" content="https://cleanklarfit.de/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Clean Klar Fit: Fit und gesund. Ein Leben lang. Online-Kurs mit Florian Schwab">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fit und gesund ab 40, 50 und 60 | Clean Klar Fit">
+<meta name="twitter:description" content="12-Wochen-Online-Kurs mit Personal Trainer Florian Schwab. Persönlich betreut.">
+<meta name="twitter:image" content="https://cleanklarfit.de/og-image.jpg">
+
+<link rel="preload" href="fonts/bricolage-grotesque.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/instrument-sans.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://cleanklarfit.de/#website",
+      "url": "https://cleanklarfit.de/",
+      "name": "Clean Klar Fit",
+      "inLanguage": "de-DE",
+      "publisher": { "@id": "https://cleanklarfit.de/#organization" }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://cleanklarfit.de/#organization",
+      "name": "Clean Klar Fit",
+      "url": "https://cleanklarfit.de/",
+      "logo": { "@type": "ImageObject", "url": "https://cleanklarfit.de/icon-512.png", "width": 512, "height": 512 },
+      "sameAs": ["https://www.instagram.com/clean.klar.fit/"]
+    },
+    {
+      "@type": "Person",
+      "@id": "https://cleanklarfit.de/#florian",
+      "name": "Florian Schwab",
+      "jobTitle": "Personal Trainer",
+      "description": "Personal Trainer aus Stuttgart mit 10 Jahren Erfahrung, Fitnesstrainer A-Lizenz und Movement & Mobility Coach.",
+      "image": "https://cleanklarfit.de/bilder/florian-portrait.jpg",
+      "url": "https://sf-personaltraining.de/",
+      "worksFor": { "@type": "Organization", "name": "SF Personal Training", "url": "https://sf-personaltraining.de/" },
+      "knowsAbout": ["Krafttraining", "Mobility", "Ernährung", "Abnehmen", "Muskelaufbau", "Rückengesundheit"],
+      "hasCredential": [
+        { "@type": "EducationalOccupationalCredential", "name": "Movement & Mobility Coach (The Ready State)", "dateCreated": "2025-01-29" },
+        { "@type": "EducationalOccupationalCredential", "name": "Fitnesstrainer A-Lizenz (OTL Akademie)", "dateCreated": "2020-12-16" },
+        { "@type": "EducationalOccupationalCredential", "name": "Kursleiter Fit durch die Schwangerschaft (BSA-Akademie)", "dateCreated": "2017-12-09" },
+        { "@type": "EducationalOccupationalCredential", "name": "Fitnesstrainer B-Lizenz (Academy of Sports)", "dateCreated": "2017-08-01" },
+        { "@type": "EducationalOccupationalCredential", "name": "Techniktrainer Gewichtheben (Deutsche Sporthochschule Köln)", "dateCreated": "2017-05-21" },
+        { "@type": "EducationalOccupationalCredential", "name": "Fitness C-Lizenz (Academy of Sports)", "dateCreated": "2016-03-09" }
+      ]
+    },
+    {
+      "@type": "Course",
+      "@id": "https://cleanklarfit.de/#kurs",
+      "name": "Clean Klar Fit: 12-Wochen-Online-Kurs für Fitness und Gesundheit ab 40",
+      "description": "Online-Kurs für Menschen ab 40, 50 und 60 mit Ernährung, Krafttraining, Mobility und Mindset. Zum Abnehmen, Muskelaufbau und Gesundbleiben. Mit wöchentlichem Live-Coaching per Zoom und persönlichem Vorgespräch.",
+      "url": "https://cleanklarfit.de/",
+      "inLanguage": "de",
+      "provider": { "@id": "https://cleanklarfit.de/#organization" },
+      "teaches": ["Ernährung im Alltag", "Krafttraining", "Mobility", "Gewohnheiten und Mindset"],
+      "timeRequired": "P12W",
+      "hasCourseInstance": {
+        "@type": "CourseInstance",
+        "courseMode": "online",
+        "courseWorkload": "P12W",
+        "instructor": { "@id": "https://cleanklarfit.de/#florian" }
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "599",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/PreOrder",
+        "url": "https://cleanklarfit.de/#warteliste"
+      }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://cleanklarfit.de/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "Bin ich mit 60 oder 70 nicht zu alt dafür?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Muskeln und Beweglichkeit lassen sich in jedem Alter aufbauen. Im persönlichen Vorgespräch klären wir, wo du stehst und was du dir vornimmst." } },
+        { "@type": "Question", "name": "Wie läuft die Warteliste ab?", "acceptedAnswer": { "@type": "Answer", "text": "Du trägst dich unverbindlich ein. Danach rufen wir dich an und sprechen über deine Ziele und Erwartungen. Der Kurs startet, sobald 30 Menschen auf der Warteliste stehen." } },
+        { "@type": "Question", "name": "Wann geht es los?", "acceptedAnswer": { "@type": "Answer", "text": "Sobald 30 Menschen auf der Warteliste stehen. Du bekommst rechtzeitig eine Nachricht mit Startdatum und allen Details." } },
+        { "@type": "Question", "name": "Muss ich jetzt schon zahlen?", "acceptedAnswer": { "@type": "Answer", "text": "Nein. Die Warteliste ist unverbindlich und kostenlos. Du entscheidest erst beim Start, ob du teilnimmst. Der Kurs kostet 599 Euro für 12 Wochen." } },
+        { "@type": "Question", "name": "Wie viel Zeit brauche ich pro Woche?", "acceptedAnswer": { "@type": "Answer", "text": "Rechne mit etwa 2 bis 3 Stunden: zwei kurze Trainingseinheiten, die Mobility-Routine und der wöchentliche Live-Call." } },
+        { "@type": "Question", "name": "Was passiert mit meinen Daten?", "acceptedAnswer": { "@type": "Answer", "text": "Deine Daten geben wir nicht weiter. Nur wenn du den Kurs buchst, nutzen wir sie, soweit nötig, für die Abrechnung und die Abwicklung des Kurses." } },
+        { "@type": "Question", "name": "Ich habe Vorerkrankungen oder Beschwerden. Kann ich trotzdem mitmachen?", "acceptedAnswer": { "@type": "Answer", "text": "Sprich vorher mit deinem Arzt oder deiner Ärztin, besonders bei Herz-Kreislauf-Erkrankungen sowie Gelenk- oder Rückenproblemen. Im Vorgespräch besprechen wir deine Situation. Der Kurs ersetzt keine ärztliche Behandlung." } }
+      ]
+    }
+  ]
 }
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{background:var(--paper);color:var(--ink);font:400 clamp(1rem,.95rem + .25vw,1.125rem)/1.6 "Instrument Sans",system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-a{color:inherit}
-.wrap{width:var(--wrap);margin-inline:auto}
-h1,h2,h3{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;line-height:1.02;letter-spacing:-.03em}
-h2{font-size:clamp(2.1rem,1.4rem + 3vw,3.9rem);max-width:18ch;text-wrap:balance}
-h3{font-size:clamp(1.25rem,1.1rem + .6vw,1.6rem);font-weight:600;letter-spacing:-.01em;line-height:1.15}
-.eyebrow{font:600 .8rem/1 "Instrument Sans";letter-spacing:.14em;text-transform:uppercase;color:var(--forest);display:block;margin-bottom:1.2rem}
-.lead{font-size:clamp(1.1rem,1rem + .45vw,1.3rem);color:var(--ink-soft);max-width:52ch;text-wrap:pretty}
-.sub{margin-top:1.4rem}
-section{padding-block:clamp(5rem,3rem + 8vw,10rem)}
-
-.btn{display:inline-flex;align-items:center;gap:.65em;background:var(--forest);color:var(--on-forest);font:600 1.05rem/1 "Instrument Sans";padding:1.15em 1.7em;border-radius:var(--radius);text-decoration:none;border:0;cursor:pointer;white-space:nowrap;transition:background .3s var(--ease),transform .3s var(--ease),box-shadow .3s var(--ease)}
-.btn:hover{background:var(--forest-dark);transform:translateY(-2px);box-shadow:0 10px 24px -12px color-mix(in oklch,var(--forest) 70%,transparent)}
-.btn:active{transform:translateY(0) scale(.98)}
-.btn .arr{transition:transform .3s var(--ease)}
-.btn:hover .arr{transform:translateX(4px)}
-:focus-visible{outline:3px solid var(--forest);outline-offset:3px}
-.join :focus-visible,.toolbox :focus-visible{outline-color:var(--sage)}
-
-/* Bildplatzhalter: werden durch echte Fotos ersetzt */
-.ph{position:relative;overflow:hidden;border-radius:var(--radius);background:
-  radial-gradient(110% 80% at 15% 0%,var(--sage-soft),transparent 60%),
-  radial-gradient(90% 80% at 100% 100%,var(--paper-3),transparent 70%),
-  var(--paper-2)}
-.ph .ph-note{position:absolute;inset:1rem auto auto 1rem;font-size:.8rem;color:var(--ink-soft);opacity:.75}
-
-/* nav */
-.nav{position:sticky;top:0;z-index:10;background:color-mix(in oklch,var(--paper) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid transparent;transition:border-color .4s}
-.nav.scrolled{border-color:var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
-.logo{font:800 1.35rem/1 "Bricolage Grotesque";letter-spacing:-.03em;text-decoration:none}
-.logo i{font-style:normal;color:var(--forest)}
-.menu{display:flex;align-items:center;gap:2rem;font-size:.95rem}
-.menu a:not(.btn){text-decoration:none;color:var(--ink-soft);transition:color .2s}
-.menu a:not(.btn):hover{color:var(--ink)}
-.menu .btn{padding:.8em 1.2em;font-size:.95rem}
-#top-sentinel{position:absolute;top:0;height:1px;width:1px}
-
-/* hero */
-.hero{padding-top:clamp(2.5rem,1.5rem + 4vw,5.5rem);padding-bottom:0}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2rem,5vw,5rem);align-items:center}
-.hero h1{font-size:clamp(2.8rem,1.6rem + 5vw,5.8rem);margin-bottom:1.6rem}
-.hero h1 em{font-style:normal;color:var(--forest);position:relative;white-space:nowrap}
-.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:.04em;height:.12em;background:var(--sage);border-radius:2px;transform-origin:left;animation:underline 1.1s .7s var(--ease) both}
-@keyframes underline{from{transform:scaleX(0)}}
-.ages{display:flex;gap:.6rem;margin:2.2rem 0 2.4rem;flex-wrap:wrap}
-.ages span{font:800 clamp(1.4rem,1.1rem + 1vw,2rem)/1 "Bricolage Grotesque";border:2px solid var(--ink);padding:.38em .6em;border-radius:var(--radius)}
-.ages span:nth-child(2){background:var(--ink);color:var(--paper)}
-.ages span:nth-child(3){border-color:var(--forest);background:var(--forest);color:var(--on-forest)}
-.hero-img{aspect-ratio:4/5;max-height:640px;width:100%}
-.hero-img .tag{position:absolute;left:1.2rem;right:auto;bottom:1.2rem;background:var(--forest);color:var(--on-forest);padding:1.1rem 1.3rem;border-radius:var(--radius);font-size:.92rem;line-height:1.4;max-width:16rem;box-shadow:0 18px 40px -20px color-mix(in oklch,var(--forest-dark) 80%,transparent)}
-.hero-img .tag b{display:block;font:800 1.15rem/1.2 "Bricolage Grotesque";margin-bottom:.15rem}
-
-/* counter */
-.counter{display:grid;grid-template-columns:auto 1fr;gap:.8rem 2rem;align-items:center}
-.counter strong{font:800 clamp(1.6rem,1.2rem + 1.4vw,2.4rem)/1 "Bricolage Grotesque";white-space:nowrap}
-.counter p{color:var(--ink-soft);font-size:.95rem}
-.hero .counter{margin-top:clamp(3rem,5vw,4.5rem);padding-block:1.8rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.bar{grid-column:1/-1;height:10px;border-radius:99px;overflow:hidden;display:grid;grid-template-columns:repeat(30,1fr);gap:3px}
-.bar i{background:var(--paper-3);border-radius:2px}
-.bar i.on{background:var(--forest);animation:pop .6s var(--ease) both}
-.join .bar i{background:var(--on-forest-line)}
-.join .bar i.on{background:var(--sage)}
-@keyframes pop{from{opacity:0;transform:scaleY(0)}}
-
-/* pain */
-.pain .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,6rem);align-items:start}
-.pain h2{position:sticky;top:110px}
-.pain ul{list-style:none}
-.pain li{padding:1.5rem 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:5rem 1fr;gap:1rem;font-size:clamp(1.05rem,1rem + .35vw,1.25rem)}
-.pain li:last-child{border-bottom:0}
-.pain li b{font:800 1rem/1.75 "Bricolage Grotesque";color:var(--forest)}
-
-/* shift */
-.shift{background:var(--forest);color:var(--on-forest)}
-.shift h2{max-width:20ch}
-.shift .lead{color:var(--on-forest-soft)}
-.myths{margin-top:clamp(3.5rem,6vw,5.5rem);display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--on-forest-line);border-block:1px solid var(--on-forest-line)}
-.myths div{background:var(--forest);padding:2.2rem 2rem 2.4rem 0}
-.myths div+div{padding-left:2rem}
-.myths s{color:var(--on-forest-soft);display:block;margin-bottom:1rem;text-decoration-color:var(--sage);text-decoration-thickness:2px}
-.myths p{font:600 clamp(1.2rem,1.1rem + .4vw,1.4rem)/1.3 "Bricolage Grotesque"}
-
-/* goals: asymmetrisch */
-.goals{margin-top:clamp(3rem,5vw,4.5rem);display:grid;grid-template-columns:1.25fr 1fr;grid-template-rows:auto auto;gap:clamp(1rem,2vw,1.5rem)}
-.goal{border-radius:var(--radius);padding:clamp(1.6rem,3vw,2.4rem);display:flex;flex-direction:column;justify-content:flex-end;gap:.7rem;min-height:15rem;transition:transform .5s var(--ease)}
-.goal:hover{transform:translateY(-4px)}
-.goal p{color:var(--ink-soft);max-width:38ch}
-.goal:nth-child(1){grid-row:1/3;background:var(--paper-2);min-height:32rem;justify-content:space-between}
-.goal:nth-child(1) .ph{flex:1;margin:-.4rem -.4rem 1.4rem;min-height:14rem}
-.goal:nth-child(2){background:var(--forest);color:var(--on-forest)}
-.goal:nth-child(2) p{color:var(--on-forest-soft)}
-.goal:nth-child(3){background:var(--sage-soft)}
-.goal h3{font-size:clamp(1.6rem,1.3rem + 1vw,2.2rem);font-weight:800;letter-spacing:-.02em}
-.same{margin-top:clamp(2.5rem,4vw,3.5rem);font:800 clamp(1.4rem,1.1rem + 1.2vw,2.2rem)/1.2 "Bricolage Grotesque";letter-spacing:-.02em}
-.same span{background:linear-gradient(transparent 62%,var(--sage-soft) 62%)}
-
-/* toolbox */
-.toolbox{background:var(--ink);color:var(--on-forest)}
-.toolbox .lead{color:var(--on-forest-soft)}
-.tools{margin-top:clamp(3.5rem,6vw,5rem);display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--on-forest-line)}
-.tool{padding:2.2rem 1.8rem 2.4rem 0;border-right:1px solid var(--on-forest-line);transition:background .4s var(--ease)}
-.tool+.tool{padding-left:1.8rem}
-.tool:last-child{border-right:0}
-.tool .k{font:800 clamp(2.4rem,2rem + 1.5vw,3.4rem)/1 "Bricolage Grotesque";color:var(--sage);display:block;margin-bottom:1.4rem}
-.tool h3{margin-bottom:.9rem;color:var(--on-forest)}
-.tool ul{list-style:none;color:var(--on-forest-soft);font-size:.95rem;display:grid;gap:.45rem}
-.coach{margin-top:2.5rem;display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;background:var(--forest);padding:clamp(1.6rem,3vw,2.2rem) clamp(1.6rem,3vw,2.4rem);border-radius:var(--radius)}
-.coach b{font:800 clamp(1.3rem,1.1rem + .7vw,1.7rem)/1.2 "Bricolage Grotesque";display:block;margin-bottom:.35rem;letter-spacing:-.02em}
-.coach p{color:var(--on-forest-soft);font-size:1rem;max-width:52ch}
-.coach .when{font:800 clamp(2.4rem,1.8rem + 2vw,3.6rem)/1 "Bricolage Grotesque";white-space:nowrap;color:var(--sage);text-align:right}
-.coach .when small{display:block;font:500 .85rem/1.3 "Instrument Sans";color:var(--on-forest-soft);margin-top:.3rem}
-
-/* timeline */
-.timeline{display:grid;grid-template-columns:repeat(4,1fr);margin-top:clamp(3rem,6vw,4.5rem);position:relative}
-.timeline::before{content:"";position:absolute;left:0;right:0;top:11px;height:2px;background:linear-gradient(90deg,var(--sage),var(--forest))}
-.phase{position:relative;padding-right:1.5rem}
-.phase::before{content:"";width:24px;height:24px;border-radius:50%;background:var(--paper);border:3px solid var(--forest);display:block;margin-bottom:1.5rem;position:relative}
-.phase:first-child::before{border-color:var(--sage)}
-.phase:last-child::before{background:var(--forest)}
-.phase small{font:600 .9rem/1 "Instrument Sans";color:var(--forest)}
-.phase h3{margin:.55rem 0 .6rem}
-.phase p{color:var(--ink-soft);font-size:.97rem}
-.note{margin-top:2.5rem;font-size:.85rem;color:var(--ink-soft)}
-
-/* trainer */
-.trainer{background:var(--paper-2)}
-.trainer .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,6vw,6rem);align-items:center}
-.trainer .ph{aspect-ratio:4/5}
-.trainer blockquote{font:600 clamp(1.4rem,1.1rem + 1.2vw,2.1rem)/1.25 "Bricolage Grotesque";letter-spacing:-.015em;margin:1.4rem 0 1.8rem;max-width:26ch;color:var(--forest)}
-.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:clamp(1.5rem,4vw,3.5rem);margin-top:2.2rem;padding-top:1.6rem;border-top:1px solid var(--line)}
-.facts b{font:800 2rem/1 "Bricolage Grotesque";display:block;margin-bottom:.3rem}
-.facts span{font-size:.9rem;color:var(--ink-soft)}
-.quals{grid-column:1/-1;margin-top:clamp(3rem,5vw,4.5rem)}
-.quals h3{margin-bottom:1.4rem}
-.quals ol{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(.8rem,1.5vw,1.2rem)}
-.quals li{background:var(--paper);border-radius:var(--radius);padding:1.3rem 1.4rem;display:grid;gap:.35rem;align-content:start;transition:transform .4s var(--ease)}
-.quals li:hover{transform:translateY(-3px)}
-.quals time{font:800 1.5rem/1 "Bricolage Grotesque";color:var(--forest);letter-spacing:-.02em}
-.quals b{font-weight:600;line-height:1.35}
-.quals span{font-size:.9rem;color:var(--ink-soft)}
-
-/* testimonials */
-.quotes{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:clamp(1rem,2vw,1.5rem);margin-top:clamp(2.5rem,5vw,4rem)}
-.quote{background:var(--paper-2);padding:clamp(1.6rem,3vw,2.2rem);border-radius:var(--radius);display:flex;flex-direction:column;justify-content:space-between;gap:2rem}
-.quote:first-child{background:var(--forest);color:var(--on-forest)}
-.quote:first-child p{font-size:1.3rem}
-.quote p{font:600 1.1rem/1.4 "Bricolage Grotesque"}
-.quote footer{font-size:.9rem;display:flex;align-items:center;gap:.8rem}
-.quote footer b{display:block;font-weight:600}
-.quote footer .av{width:44px;height:44px;border-radius:50%;background:var(--sage-soft);flex:none}
-.quote:first-child footer .av{background:color-mix(in oklch,var(--on-forest) 25%,transparent)}
-
-/* free */
-.free{padding-block:clamp(3.5rem,6vw,5.5rem);background:var(--sage-soft)}
-.free .wrap{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center}
-.free h3{font-size:clamp(1.6rem,1.2rem + 1.2vw,2.4rem);font-weight:800;letter-spacing:-.025em;margin-bottom:.6rem}
-.free p{color:var(--ink-soft);max-width:55ch}
-.links{display:flex;gap:.8rem;flex-wrap:wrap}
-.ghost{display:inline-flex;align-items:center;gap:.5em;padding:1em 1.4em;border:2px solid var(--ink);border-radius:var(--radius);font-weight:600;text-decoration:none;white-space:nowrap;transition:background .3s var(--ease),color .3s var(--ease),transform .3s var(--ease)}
-.ghost:hover{background:var(--ink);color:var(--paper);transform:translateY(-2px)}
-.ghost:active{transform:scale(.98)}
-
-/* fit */
-.fit .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(1rem,2vw,1.5rem)}
-.fit .col{border-radius:var(--radius);padding:clamp(1.8rem,3.5vw,2.8rem)}
-.fit .yes{background:var(--paper-2)}
-.fit .no{border:2px solid var(--paper-3)}
-.fit h3{margin-bottom:1.6rem;font-weight:800;font-size:clamp(1.5rem,1.2rem + 1vw,2rem);letter-spacing:-.02em}
-.fit ul{list-style:none;display:grid;gap:1rem}
-.fit li{display:grid;grid-template-columns:1.8rem 1fr;gap:.4rem}
-.fit li::before{content:"✓";font-weight:800;color:var(--forest)}
-.fit .no li::before{content:"✕";color:var(--ink-soft)}
-.fit .no{color:var(--ink-soft)}
-
-/* join */
-.join{background:var(--forest);color:var(--on-forest)}
-.join .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,6vw,6rem);align-items:start}
-.join .eyebrow{color:var(--sage)}
-.price{margin:2.2rem 0 .8rem;display:flex;align-items:baseline;gap:1rem;flex-wrap:wrap}
-.price b{font:800 clamp(3.5rem,2.5rem + 4vw,6rem)/1 "Bricolage Grotesque";letter-spacing:-.04em}
-.price span{color:var(--on-forest-soft)}
-.incl{list-style:none;display:grid;gap:.75rem;margin-top:1.8rem;color:var(--on-forest-soft)}
-.incl li{display:grid;grid-template-columns:1.6rem 1fr}
-.incl li::before{content:"✓";color:var(--sage);font-weight:800}
-.join .counter{margin-top:2.6rem;padding-top:1.6rem;border-top:1px solid var(--on-forest-line)}
-.join .counter p{color:var(--on-forest-soft)}
-form{background:var(--paper);color:var(--ink);padding:clamp(1.8rem,3.5vw,2.6rem);border-radius:var(--radius);box-shadow:0 30px 60px -30px color-mix(in oklch,var(--forest-dark) 90%,transparent)}
-form h3{font-weight:800;font-size:clamp(1.6rem,1.3rem + 1vw,2.1rem);letter-spacing:-.02em;margin-bottom:.5rem}
-.fields > p{color:var(--ink-soft);font-size:.95rem;margin-bottom:1.8rem}
-.field{display:grid;gap:.45rem;margin-bottom:1.2rem}
-label{font-weight:600;font-size:.9rem}
-.opt{color:var(--ink-soft);font-weight:400}
-input[type=text],input[type=email]{width:100%;font:inherit;padding:.9em 1em;border:1.5px solid var(--line);border-radius:var(--radius);background:oklch(99% 0.005 95);color:var(--ink);transition:border-color .2s}
-input[type=text]:hover,input[type=email]:hover{border-color:var(--ink-soft)}
-.field.invalid input{border-color:var(--error)}
-.err{display:none;font-size:.85rem;color:var(--error)}
-.field.invalid .err,.consent.invalid + .err{display:block}
-.chips{display:flex;gap:.5rem;flex-wrap:wrap}
-.chips input{position:absolute;opacity:0;width:1px;height:1px}
-.chips label{font-weight:500;border:1.5px solid var(--line);padding:.6em 1em;border-radius:var(--radius);cursor:pointer;transition:all .25s var(--ease)}
-.chips label:hover{border-color:var(--ink-soft)}
-.chips input:checked+label{background:var(--forest);color:var(--on-forest);border-color:var(--forest)}
-.chips input:focus-visible+label{outline:3px solid var(--forest);outline-offset:2px}
-.consent{display:grid;grid-template-columns:auto 1fr;gap:.7rem;font-size:.85rem;color:var(--ink-soft);font-weight:400;margin-top:1.6rem}
-.consent input{margin:.25rem 0 0;accent-color:var(--forest);width:16px;height:16px}
-.consent-err{margin:.4rem 0 0 1.6rem}
-form .btn{width:100%;justify-content:center;margin-top:1.6rem}
-.ok{display:none;text-align:center;padding:2.5rem 0}
-.ok b{font:800 2.2rem/1.1 "Bricolage Grotesque";display:block;margin-bottom:.6rem;color:var(--forest)}
-.ok p{color:var(--ink-soft)}
-form.done .fields{display:none}
-form.done .ok{display:block;animation:fadeup .7s var(--ease) both}
-@keyframes fadeup{from{opacity:0;transform:translateY(12px)}}
-
-/* faq */
-.faq .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:clamp(2rem,6vw,6rem)}
-details{border-bottom:1px solid var(--line)}
-summary{list-style:none;cursor:pointer;padding:1.4rem 0;font:600 1.15rem/1.3 "Bricolage Grotesque";display:flex;justify-content:space-between;gap:1rem;transition:color .2s}
-summary:hover{color:var(--forest)}
-summary::-webkit-details-marker{display:none}
-summary::after{content:"+";font-size:1.6rem;line-height:1;color:var(--forest);transition:transform .35s var(--ease)}
-details[open] summary::after{transform:rotate(45deg)}
-details p{padding-bottom:1.5rem;color:var(--ink-soft);max-width:60ch}
-
-/* final */
-.final{padding-block:clamp(5rem,9vw,9rem);background:var(--paper-2)}
-.final .wrap{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:end}
-.final .btn{justify-self:start}
-.final h2{font-size:clamp(2.4rem,1.5rem + 4vw,5rem);max-width:16ch}
-
-footer.site{background:var(--ink);color:var(--on-forest-soft);padding:2.4rem 0;font-size:.9rem}
-footer.site .wrap{display:grid;grid-template-columns:1fr auto auto;gap:1.5rem 2.5rem;align-items:center}
-footer.site a{text-decoration:none;transition:color .2s}
-footer.site a:hover{color:var(--on-forest)}
-footer.site .fl{display:flex;gap:1.6rem}
-footer.site .credit a{color:var(--on-forest);font-weight:600;border-bottom:1px solid var(--on-forest-line);padding-bottom:1px}
-footer.site .credit a:hover{border-color:var(--sage)}
-
-/* reveal */
-.rv{opacity:0;transform:translateY(24px);transition:opacity 1s var(--ease),transform 1s var(--ease)}
-.rv.in{opacity:1;transform:none}
-.rv[style*="--d"]{transition-delay:calc(var(--d) * 100ms)}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}html{scroll-behavior:auto}}
-
-@media (max-width:960px){
-  .menu a:not(.btn){display:none}
-  .hero-grid,.pain .wrap,.trainer .wrap,.join .wrap,.faq .wrap,.fit .wrap,.free .wrap,.final .wrap{grid-template-columns:1fr}
-  .pain h2{position:static}
-  .hero-img{aspect-ratio:4/3;max-height:440px}
-  .myths,.quotes{grid-template-columns:1fr}
-  .myths div,.myths div+div{padding:1.8rem 0}
-  .goals{grid-template-columns:1fr}
-  .goal:nth-child(1){grid-row:auto;min-height:0}
-  .tools{grid-template-columns:1fr 1fr}
-  .tool,.tool+.tool{padding:1.8rem 1.2rem 1.8rem 0;border-right:0;border-bottom:1px solid var(--on-forest-line)}
-  .tool:nth-child(even){padding-left:1.2rem;border-left:1px solid var(--on-forest-line)}
-  .timeline{grid-template-columns:1fr 1fr;gap:2.5rem 0}
-  .timeline::before{display:none}
-  .quals ol{grid-template-columns:1fr 1fr}
-  .coach{grid-template-columns:1fr}
-  .coach .when{text-align:left}
-  footer.site .wrap{grid-template-columns:1fr}
-}
-@media (max-width:560px){
-  .tools{grid-template-columns:1fr}
-  .tool:nth-child(even){padding-left:0;border-left:0}
-  .timeline{grid-template-columns:1fr}
-  .quals ol{grid-template-columns:1fr}
-  .facts{grid-template-columns:1fr 1fr}
-  .pain li{grid-template-columns:1fr;gap:.2rem}
-  .counter{grid-template-columns:1fr}
-}
-</style>
+</script>
 </head>
 <body>
+<a class="skip" href="#inhalt">Zum Inhalt springen</a>
 <span id="top-sentinel" aria-hidden="true"></span>
 
 <header class="nav" id="nav"><div class="wrap">
-  <a href="#" class="logo" aria-label="Clean Klar Fit, zum Seitenanfang">clean<i>.</i>klar<i>.</i>fit<i>.</i></a>
+  <a href="./" class="logo" aria-label="Clean Klar Fit, zur Startseite">clean<i>.</i>klar<i>.</i>fit<i>.</i></a>
   <nav class="menu" aria-label="Hauptnavigation">
     <a href="#kurs">Der Kurs</a>
     <a href="#florian">Dein Coach</a>
@@ -318,26 +129,26 @@ footer.site .credit a:hover{border-color:var(--sage)}
   </nav>
 </div></header>
 
-<main>
+<main id="inhalt">
 <section class="hero"><div class="wrap">
   <div class="hero-grid">
     <div>
       <span class="eyebrow rv" style="--d:0">12-Wochen-Online-Kurs mit Florian Schwab</span>
       <h1 class="rv" style="--d:1">Fit und gesund. <em>Ein Leben lang.</em></h1>
       <p class="lead rv" style="--d:2">Lerne in 12 Wochen, Ernährung und Training selbst zu steuern. Zum Abnehmen, Aufbauen oder Gesundbleiben.</p>
-      <div class="ages rv" style="--d:3" aria-label="Für Menschen ab 40, 50 und 60"><span>40+</span><span>50+</span><span>60+</span></div>
-      <div class="rv" style="--d:4"><a href="#warteliste" class="btn">Platz sichern <span class="arr" aria-hidden="true">→</span></a></div>
+      <div class="ages rv" style="--d:3" aria-label="Für Menschen ab 40, 50, 60 und älter"><span>40+</span><span>50+</span><span>60+</span></div>
+      <div class="hero-cta rv" style="--d:4">
+        <a href="#warteliste" class="btn">Platz sichern <span class="arr" aria-hidden="true">→</span></a>
+        <small>Persönlich betreut. Start, sobald 30 Menschen auf der Warteliste stehen.</small>
+      </div>
     </div>
-    <div class="hero-img ph rv" style="--d:3">
-      <!-- TODO: Foto Florian im Training, Hochformat ca. 1200x1500 -->
-      <span class="ph-note">Foto: Florian im Training</span>
+    <div class="hero-img photo rv" style="--d:3">
+      <picture>
+        <source srcset="bilder/florian-hero.webp" type="image/webp">
+        <img src="bilder/florian-hero.jpg" width="680" height="850" alt="Florian Schwab, Personal Trainer aus Stuttgart, mit verschränkten Armen" fetchpriority="high">
+      </picture>
       <div class="tag"><b>10 Jahre Personal Training</b>jetzt als strukturierter Online-Kurs</div>
     </div>
-  </div>
-  <div class="counter rv">
-    <strong><span class="count">18</span> von 30</strong>
-    <p>Wir starten, sobald die Gruppe voll ist. Wer auf der Warteliste steht, erfährt es zuerst.</p>
-    <div class="bar" aria-hidden="true"></div>
   </div>
 </div></section>
 
@@ -368,7 +179,8 @@ footer.site .credit a:hover{border-color:var(--sage)}
   <p class="lead sub rv">Clean Klar Fit ist keine Diät, sondern ein gesunder Lebensstil. Und der passt sich deinem Ziel an.</p>
   <div class="goals">
     <article class="goal rv">
-      <div class="ph"><!-- TODO: Bild Ernährung / Alltag, Querformat --><span class="ph-note">Bild: Ernährung im Alltag</span></div>
+      <!-- Optional: hier ein Bild einsetzen, z. B. <img src="bilder/ernaehrung-alltag.jpg" alt="..." width="..." height="..." loading="lazy"> statt .goal-img -->
+      <div class="goal-img" aria-hidden="true"></div>
       <h3>Abnehmen</h3><p>Fett verlieren, ohne zu hungern und ohne Muskeln zu verlieren. Nachhaltig statt Jo-Jo.</p>
     </article>
     <article class="goal rv"><h3>Zunehmen &amp; Aufbauen</h3><p>Muskeln aufbauen, Kraft zurückholen und gezielt zulegen. Auf die gesunde Art.</p></article>
@@ -387,7 +199,7 @@ footer.site .credit a:hover{border-color:var(--sage)}
     <div class="tool rv"><span class="k">04</span><h3>Mindset</h3><ul><li>Prozessziele statt Wunschgewicht</li><li>Gewohnheiten statt Motivation</li><li>Schlaf und Stress im Griff</li><li>Dranbleiben, wenn es stockt</li></ul></div>
   </div>
   <div class="coach rv">
-    <div><b>Jede Woche live mit Florian</b><p>Im Gruppen-Call per Zoom beantwortet Florian deine Fragen. Du bist nie allein mit dem Plan.</p></div>
+    <div><b>Jede Woche live mit Florian</b><p>Im Gruppen-Call per Zoom beantwortet Florian deine Fragen. Vorher sprechen wir persönlich mit dir über deine Ziele. Du bist nie allein mit dem Plan.</p></div>
     <div class="when">12×<small>Live-Coaching</small></div>
   </div>
 </div></section>
@@ -400,11 +212,15 @@ footer.site .credit a:hover{border-color:var(--sage)}
     <div class="phase rv"><small>Woche 7 bis 9</small><h3>Alltag</h3><p>Stress, Schlaf, Geschäftsessen, Reisen: Werkzeuge für echte Situationen.</p></div>
     <div class="phase rv"><small>Woche 10 bis 12</small><h3>Selbstständig</h3><p>Du steuerst selbst und weißt, was zu tun ist. Auch nach dem Kurs.</p></div>
   </div>
-  <p class="note">Entwurf: Die Phasen werden noch mit der 12-Wochen-Übersicht abgeglichen.</p>
 </div></section>
 
 <section class="trainer" id="florian"><div class="wrap">
-  <div class="ph rv"><!-- TODO: Portrait Florian, Hochformat --><span class="ph-note">Portrait: Florian Schwab</span></div>
+  <div class="photo rv">
+    <picture>
+      <source srcset="bilder/florian-portrait.webp" type="image/webp">
+      <img src="bilder/florian-portrait.jpg" width="854" height="1068" alt="Portrait von Florian Schwab" loading="lazy">
+    </picture>
+  </div>
   <div class="rv">
     <span class="eyebrow">Dein Coach und Entwickler des Kurses</span>
     <h2>Florian Schwab</h2>
@@ -419,30 +235,53 @@ footer.site .credit a:hover{border-color:var(--sage)}
   <div class="quals">
     <h3 class="rv">Qualifikationen</h3>
     <ol>
-      <li class="rv"><time>2025</time><b>Movement &amp; Mobility Coach</b><span>The Ready State</span></li>
-      <li class="rv"><time>2020</time><b>Fitnesstrainer A-Lizenz</b><span>OTL Akademie</span></li>
-      <li class="rv"><time>2017</time><b>Kursleiter „Fit durch die Schwangerschaft“</b><span>BSA-Akademie</span></li>
-      <li class="rv"><time>2017</time><b>Fitnesstrainer B-Lizenz</b><span>Academy of Sports</span></li>
-      <li class="rv"><time>2017</time><b>Techniktrainer Gewichtheben</b><span>Deutsche Sporthochschule Köln</span></li>
-      <li class="rv"><time>2016</time><b>Fitness C-Lizenz</b><span>Academy of Sports</span></li>
+      <li class="rv"><time datetime="2025">2025</time><b>Movement &amp; Mobility Coach</b><span>The Ready State</span></li>
+      <li class="rv"><time datetime="2020">2020</time><b>Fitnesstrainer A-Lizenz</b><span>OTL Akademie</span></li>
+      <li class="rv"><time datetime="2017">2017</time><b>Kursleiter „Fit durch die Schwangerschaft“</b><span>BSA-Akademie</span></li>
+      <li class="rv"><time datetime="2017">2017</time><b>Fitnesstrainer B-Lizenz</b><span>Academy of Sports</span></li>
+      <li class="rv"><time datetime="2017">2017</time><b>Techniktrainer Gewichtheben</b><span>Deutsche Sporthochschule Köln</span></li>
+      <li class="rv"><time datetime="2016">2016</time><b>Fitness C-Lizenz</b><span>Academy of Sports</span></li>
     </ol>
   </div>
 </div></section>
 
-<section><div class="wrap">
-  <h2 class="rv">Was Kunden über Florian sagen.</h2>
-  <div class="quotes">
-    <blockquote class="quote rv"><p>[Platzhalter: echtes Testimonial mit konkretem Ergebnis, 1 bis 2 Sätze]</p><footer><span class="av"></span><span><b>Name</b>Alter, Beruf</span></footer></blockquote>
-    <blockquote class="quote rv"><p>[Platzhalter: Testimonial einer Person 50+]</p><footer><span class="av"></span><span><b>Name</b>Alter, Beruf</span></footer></blockquote>
-    <blockquote class="quote rv"><p>[Platzhalter: Testimonial einer Person 60+]</p><footer><span class="av"></span><span><b>Name</b>Alter, Beruf</span></footer></blockquote>
+<section id="stimmen"><div class="wrap">
+  <h2 class="rv">Was Florians Kunden sagen.</h2>
+  <div class="rating rv">
+    <span class="score">5,0</span>
+    <span class="stars" aria-label="5 von 5 Sternen">★★★★★</span>
+    <p>Durchschnitt aus 5 Google-Bewertungen<br><a href="https://maps.google.com/maps?cid=5181334002442210787" target="_blank" rel="noopener">Alle Bewertungen auf Google ↗</a></p>
+  </div>
+  <div class="reviews">
+    <figure class="review rv">
+      <blockquote><p>„Was mich an Florian am meisten beeindruckt, ist seine hohe Professionalität. Wir trainieren seit rund fünf Jahren zusammen, und er merkt sofort, was an einem Tag geht und was nicht. Entsprechend passt er das Training an, ohne großes Aufheben und immer genau richtig. Die Fortschritte sprechen für sich: Ich bin stärker, beweglicher und bei vielen Skills deutlich besser geworden. Und weil Florian fachlich immer auf dem neuesten Stand ist, macht auch der Austausch rund ums Training richtig Spaß.“</p></blockquote>
+      <figcaption><span class="av" aria-hidden="true">MR</span><span><b>Markus R., 58 Jahre</b><span>Google-Bewertung</span></span></figcaption>
+    </figure>
+    <figure class="review rv">
+      <blockquote><p>„Perfektes Training, das auf meine Bedürfnisse optimal eingeht. Florian ist extrem versiert und greift auf ein sehr breites Spektrum von Trainingsmöglichkeiten zurück.“</p></blockquote>
+      <figcaption><span class="av" aria-hidden="true">OM</span><span><b>Ole M., 51 Jahre</b><span>Google-Bewertung</span></span></figcaption>
+    </figure>
+    <figure class="review rv">
+      <blockquote><p>„Seit 1 Jahr Kunde und mehr als zufrieden mit den Ergebnissen. Das Training ist individuell abgestimmt und durchdacht, dadurch äußerst effektiv.“</p></blockquote>
+      <figcaption><span class="av" aria-hidden="true">MH</span><span><b>Marvin H., 38 Jahre</b><span>Google-Bewertung</span></span></figcaption>
+    </figure>
+    <figure class="review rv">
+      <blockquote><p>„Ein großartiger Personal Trainer, den wir von ganzem Herzen empfehlen! Er hat schnell erkannt, wo unsere Herausforderungen liegen, und gemeinsam mit meinem Mann und mir einen Trainingsplan entwickelt, der uns unseren Zielen wirklich nähergebracht hat. Dabei hat er unsere Lebenssituation als Familie mit Kindern immer berücksichtigt und das Training perfekt auf uns abgestimmt, von der Ernährung bis zu den einzelnen Sporteinheiten. Sogar Training auf dem Spielplatz hat er eingebaut, damit wir die Kinder mitnehmen konnten. Wer Wert auf Erfahrung und Qualität legt und beim Training auch gerne lacht, ist bei ihm genau richtig!“</p></blockquote>
+      <figcaption><span class="av" aria-hidden="true">DG</span><span><b>Dijana G., 38 Jahre</b><span>Google-Bewertung</span></span></figcaption>
+    </figure>
+    <figure class="review rv">
+      <blockquote><p>„Seit 4 Jahren Stammkunde und für mich eine der besten Entscheidungen im Leben: in Körper und Gesundheit zu investieren. Super maßgeschneiderte Trainings, Coaching, super Flexibilität, höchste Professionalität und eine theoretische und praktische Ahnung von der Materie, welche ich mir in einem Gym nicht vorstellen kann. Ich kann jedem zu 100 % weiterempfehlen und sage Danke!“</p></blockquote>
+      <figcaption><span class="av" aria-hidden="true">NN</span><span><b>Nikola N., 35 Jahre</b><span>Google-Bewertung</span></span></figcaption>
+    </figure>
   </div>
 </div></section>
 
 <div class="free"><div class="wrap">
-  <div class="rv"><h3>Erst mal reinschnuppern?</h3><p>Kostenlose Workouts auf YouTube, kurze Tipps von Florian auf Instagram. So siehst du, wie wir arbeiten.</p></div>
+  <div class="rv"><h3>Erst mal reinschnuppern?</h3><p>Auf Instagram und YouTube zeigt Florian dir kostenlos Übungen und Tipps. So siehst du, wie wir arbeiten.</p></div>
   <div class="links rv">
-    <a class="ghost" href="#" target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a>
-    <a class="ghost" href="https://www.instagram.com/sf_personaltraining_stuttgart/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
+    <!-- YouTube-Link hier einfügen, sobald der Kanal-Link feststeht:
+    <a class="ghost" href="https://www.youtube.com/@..." target="_blank" rel="noopener">YouTube <span aria-hidden="true">↗</span></a> -->
+    <a class="ghost" href="https://www.instagram.com/clean.klar.fit/" target="_blank" rel="noopener">Instagram <span aria-hidden="true">↗</span></a>
   </div>
 </div></div>
 
@@ -470,92 +309,78 @@ footer.site .credit a:hover{border-color:var(--sage)}
   <div class="rv">
     <span class="eyebrow">Warteliste</span>
     <h2>Sichere dir deinen Platz in der ersten Gruppe.</h2>
+    <p class="lead">Wir starten, sobald 30 Menschen auf der Warteliste stehen. Bis dahin lernen wir dich persönlich kennen.</p>
     <div class="price"><b>599 €</b><span>für 12 Wochen, rund 50 € pro Woche</span></div>
+    <ol class="steps">
+      <li><b>Du trägst dich ein.</b><span>Unverbindlich und kostenlos.</span></li>
+      <li><b>Wir rufen dich an.</b><span>Wir sprechen über deine Ziele und Erwartungen und passen den Kurs so gut wie möglich auf dich an.</span></li>
+      <li><b>Der Kurs startet.</b><span>Sobald 30 Menschen auf der Liste stehen, melden wir uns mit Startdatum. Erst dann entscheidest du, ob du dabei bist.</span></li>
+    </ol>
     <ul class="incl">
       <li>12 Wochen Inhalte zu Ernährung, Training, Mobility und Mindset</li>
       <li>12 Live-Gruppen-Calls per Zoom mit Florian</li>
-      <li>Trainingspläne, die in deinen Alltag passen</li>
-      <li>Werkzeuge, die dir auch nach dem Kurs bleiben</li>
+      <li>Persönliche Betreuung statt Massenkurs</li>
     </ul>
-    <div class="counter">
-      <strong><span class="count">18</span> von 30</strong>
-      <p>Plätze auf der Warteliste belegt</p>
-      <div class="bar" aria-hidden="true"></div>
-    </div>
   </div>
-  <form id="form" class="rv" novalidate>
+  <form id="form" class="rv" action="anmelden.php" method="post" novalidate>
     <div class="fields">
       <h3>Auf die Warteliste</h3>
-      <p>Unverbindlich und kostenlos. Du zahlst erst, wenn die Gruppe startet und du dich entscheidest.</p>
-      <div class="field"><label for="name">Vorname</label><input type="text" id="name" name="name" autocomplete="given-name" required><span class="err">Bitte gib deinen Vornamen ein.</span></div>
-      <div class="field"><label for="email">E-Mail</label><input type="email" id="email" name="email" autocomplete="email" required><span class="err">Bitte gib eine gültige E-Mail-Adresse ein.</span></div>
+      <p>Unverbindlich und kostenlos. Du zahlst erst, wenn der Kurs startet und du dich entscheidest.</p>
+      <div class="field"><label for="name">Vorname</label><input type="text" id="name" name="name" autocomplete="given-name" required maxlength="80"><span class="err">Bitte gib deinen Vornamen ein.</span></div>
+      <div class="field"><label for="email">E-Mail</label><input type="email" id="email" name="email" autocomplete="email" required maxlength="120"><span class="err">Bitte gib eine gültige E-Mail-Adresse ein.</span></div>
+      <div class="field"><label for="tel">Telefonnummer</label><input type="tel" id="tel" name="tel" autocomplete="tel" inputmode="tel" required maxlength="40" pattern="[0-9+()\/\s\-]{6,}"><span class="hint">Damit wir dich für das persönliche Gespräch anrufen können.</span><span class="err">Bitte gib eine gültige Telefonnummer ein.</span></div>
       <div class="field"><label id="goal-l">Dein Ziel <span class="opt">(optional)</span></label>
         <div class="chips" role="radiogroup" aria-labelledby="goal-l">
-          <input type="radio" name="goal" id="g1" value="abnehmen"><label for="g1">Abnehmen</label>
-          <input type="radio" name="goal" id="g2" value="aufbauen"><label for="g2">Aufbauen</label>
-          <input type="radio" name="goal" id="g3" value="gesund"><label for="g3">Gesünder leben</label>
+          <input type="radio" name="goal" id="g1" value="Abnehmen"><label for="g1">Abnehmen</label>
+          <input type="radio" name="goal" id="g2" value="Aufbauen"><label for="g2">Aufbauen</label>
+          <input type="radio" name="goal" id="g3" value="Gesünder leben"><label for="g3">Gesünder leben</label>
         </div>
       </div>
-      <label class="consent"><input type="checkbox" id="consent" required><span>Ich möchte Infos zum Kursstart per E-Mail erhalten und stimme der <a href="#">Datenschutzerklärung</a> zu.</span></label>
-      <span class="err consent-err">Bitte bestätige die Datenschutzerklärung.</span>
+      <div class="hp" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+      <input type="hidden" name="t" value="">
+      <label class="consent"><input type="checkbox" id="consent" name="consent" value="ja" required><span>Ich bin einverstanden, dass ihr mich per E-Mail und telefonisch zum Kursstart und zu meinen Zielen kontaktiert. Die <a href="datenschutz.html">Datenschutzerklärung</a> habe ich gelesen.</span></label>
+      <span class="err consent-err">Bitte bestätige das, damit wir dich kontaktieren dürfen.</span>
       <button class="btn" type="submit">Platz sichern <span class="arr" aria-hidden="true">→</span></button>
+      <div class="form-err" role="alert">Das hat leider nicht geklappt. Bitte versuche es gleich noch einmal oder schreib uns an hello@markmade.de.</div>
+      <p class="privacy">Deine Daten bleiben bei uns und werden nicht weitergegeben. Nur wenn du den Kurs buchst, nutzen wir sie, soweit nötig, für die Abrechnung und die Abwicklung des Kurses.</p>
     </div>
-    <div class="ok" role="status" tabindex="-1"><b>Du bist dabei!</b><p>Wir melden uns, sobald die Gruppe voll ist.</p></div>
+    <div class="ok" role="status" tabindex="-1"><b>Du bist dabei.</b><p>Danke für deine Anmeldung. Wir melden uns telefonisch bei dir, um über deine Ziele zu sprechen.</p></div>
   </form>
 </div></section>
 
 <section class="faq" id="faq"><div class="wrap">
   <h2 class="rv">Häufige Fragen.</h2>
   <div class="rv">
-    <details><summary>Bin ich mit 60 nicht zu alt dafür?</summary><p>Nein. Muskeln und Beweglichkeit lassen sich in jedem Alter aufbauen. Die Übungen werden an dein Level angepasst.</p></details>
+    <details><summary>Bin ich mit 60 oder 70 nicht zu alt dafür?</summary><p>Nein. Muskeln und Beweglichkeit lassen sich in jedem Alter aufbauen. Im persönlichen Vorgespräch klären wir, wo du stehst und was du dir vornimmst.</p></details>
+    <details><summary>Wie läuft die Warteliste ab?</summary><p>Du trägst dich unverbindlich ein. Danach rufen wir dich an und sprechen über deine Ziele und Erwartungen. Der Kurs startet, sobald 30 Menschen auf der Warteliste stehen.</p></details>
+    <details><summary>Wann geht es los?</summary><p>Sobald 30 Menschen auf der Warteliste stehen. Du bekommst rechtzeitig eine Nachricht mit Startdatum und allen Details.</p></details>
+    <details><summary>Muss ich jetzt schon zahlen?</summary><p>Nein. Die Warteliste ist unverbindlich und kostenlos. Du entscheidest erst beim Start, ob du teilnimmst. Der Kurs kostet 599 Euro für 12 Wochen.</p></details>
     <details><summary>Wie viel Zeit brauche ich pro Woche?</summary><p>Rechne mit etwa 2 bis 3 Stunden: zwei kurze Trainingseinheiten, die Mobility-Routine und der wöchentliche Live-Call.</p></details>
-    <details><summary>Brauche ich ein Fitnessstudio?</summary><p>[Antwort ergänzen]</p></details>
-    <details><summary>Was, wenn ich einen Live-Call verpasse?</summary><p>[Antwort ergänzen, z. B. ob es Aufzeichnungen gibt]</p></details>
-    <details><summary>Wann geht es los?</summary><p>Sobald 30 Menschen auf der Warteliste stehen. Du bekommst rechtzeitig eine E-Mail mit Startdatum und allen Details.</p></details>
-    <details><summary>Muss ich jetzt schon zahlen?</summary><p>Nein. Die Warteliste ist unverbindlich. Du entscheidest erst beim Start, ob du teilnimmst.</p></details>
+    <details><summary>Was passiert mit meinen Daten?</summary><p>Deine Daten geben wir nicht weiter. Nur wenn du den Kurs buchst, nutzen wir sie, soweit nötig, für die Abrechnung und die Abwicklung des Kurses. Mehr dazu in der <a href="datenschutz.html">Datenschutzerklärung</a>.</p></details>
+    <details><summary>Ich habe Vorerkrankungen oder Beschwerden. Kann ich trotzdem mitmachen?</summary><p>Sprich vorher mit deinem Arzt oder deiner Ärztin, besonders bei Herz-Kreislauf-Erkrankungen sowie Gelenk- oder Rückenproblemen. Im Vorgespräch besprechen wir deine Situation. Der Kurs ersetzt keine ärztliche Behandlung.</p></details>
   </div>
 </div></section>
 
 <section class="final"><div class="wrap">
-  <h2 class="rv">Dein Körper ist nicht zu alt. Er braucht nur den richtigen Plan.</h2>
-  <a href="#warteliste" class="btn rv">Platz sichern <span class="arr" aria-hidden="true">→</span></a>
+  <div class="txt">
+    <h2 class="rv">Dein Körper ist nicht zu alt. Er braucht nur den richtigen Plan.</h2>
+    <a href="#warteliste" class="btn rv">Platz sichern <span class="arr" aria-hidden="true">→</span></a>
+  </div>
+  <div class="photo rv">
+    <picture>
+      <source srcset="bilder/florian-ruecken.webp" type="image/webp">
+      <img src="bilder/florian-ruecken.jpg" width="854" height="1068" alt="Florian Schwab von hinten im SF-Personal-Training-Shirt" loading="lazy">
+    </picture>
+  </div>
 </div></section>
 </main>
 
 <footer class="site"><div class="wrap">
   <span>© 2026 Clean Klar Fit</span>
-  <span class="fl"><a href="#">Impressum</a><a href="#">Datenschutz</a></span>
+  <span class="fl"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a><a href="https://www.instagram.com/clean.klar.fit/" target="_blank" rel="noopener">Instagram</a></span>
   <span class="credit">Webdesign by <a href="https://markmade.de" target="_blank" rel="noopener">markmade.de</a></span>
 </div></footer>
 
-<script>
-const FILLED = 18; // Demo-Wert, später aus der Warteliste
-document.querySelectorAll('.bar').forEach(bar=>{
-  for(let i=0;i<30;i++){const s=document.createElement('i');if(i<FILLED){s.className='on';s.style.animationDelay=(0.6+i*0.035)+'s'}bar.appendChild(s)}
-});
-
-const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv').forEach(el=>io.observe(el));
-
-// Nav-Linie, sobald nicht mehr ganz oben (ohne Scroll-Listener)
-const nav=document.getElementById('nav');
-new IntersectionObserver(([e])=>nav.classList.toggle('scrolled',!e.isIntersecting)).observe(document.getElementById('top-sentinel'));
-
-const form=document.getElementById('form');
-const check=el=>{const f=el.closest('.field');if(f)f.classList.toggle('invalid',!el.checkValidity());return el.checkValidity()};
-form.querySelectorAll('input[type=text],input[type=email]').forEach(el=>el.addEventListener('blur',()=>{if(el.value)check(el)}));
-form.addEventListener('submit',e=>{
-  e.preventDefault();
-  const fields=[...form.querySelectorAll('input[type=text],input[type=email]')];
-  const ok=fields.map(check).every(Boolean);
-  const consent=document.getElementById('consent');
-  const cErr=form.querySelector('.consent-err');
-  cErr.style.display=consent.checked?'none':'block';
-  if(!ok||!consent.checked){(fields.find(f=>!f.checkValidity())||consent).focus();return}
-  form.classList.add('done');
-  form.querySelector('.ok').focus();
-  document.querySelectorAll('.count').forEach(c=>c.textContent=Math.min(30,FILLED+1));
-});
-</script>
+<script src="assets/main.js" defer></script>
 </body>
 </html>
